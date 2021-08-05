@@ -145,6 +145,7 @@ aside{
     height: auto;
     text-align: left;
     padding: 5em;
+    text-decoration: none;
 }
 
 .Contactos li{
@@ -158,6 +159,11 @@ aside{
     height: 20px;
     float: left;
     margin-left: 10px;
+    text-decoration: none;
+}
+a{
+    color:rgb(0, 0, 0);
+    text-decoration: none;
 }
 
 button{
