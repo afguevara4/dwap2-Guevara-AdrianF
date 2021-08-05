@@ -18,7 +18,7 @@ body{
 /*Encabezado*/
 .Encabezado{
     width: 100%;
-    height: 769px; 
+    height: 500px; 
     margin: 0 auto;
     padding-top: 5em;
     text-align: center;
@@ -197,9 +197,26 @@ footer h2{
     font-size: 15px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 947px){
     .Encabezado{
         display: inline-block;
+        width: 100%;
+        height: 250px; 
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        position: absolute; /*las opciones de logo y menu se integran con la imagen*/
+    }
+    .Encabezado h2{
+        font-size: 10px;
+        color: #fff;
+    }
+    .Encabezado h1{
+        font-size: 20px;
+        color: #fff;
+        padding: 0.1em;
     }
     .Informacion{
         display: inline-block
