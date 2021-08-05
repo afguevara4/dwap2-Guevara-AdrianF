@@ -1,0 +1,207 @@
+*{/*Quitar los margenes y los reyenes que vienen por defecto*/
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: rgb(68, 102, 68);
+}
+/*Encabezado*/
+.Encabezado{
+    width: 100%;
+    height: 769px; 
+    margin: 0 auto;
+    padding-top: 5em;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute; /*las opciones de logo y menu se integran con la imagen*/
+}
+
+figure img{
+    width: 100%;
+    height: 100%;
+}
+
+.Encabezado h1{
+    font-size: 60px;
+    color: #fff;
+    padding: 0.2em;
+}
+
+.Encabezado h2{
+    font-size: 30px;
+    color: #fff;
+}
+/*Hacerca de Nosotros*/
+.Informacion{
+    background-color: rgb(46, 95, 75);
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+
+.Informacion img{
+    font-weight: bold;
+    margin: auto;
+    display: block;
+    padding: 1em;
+    height: 400px;
+    width: 400px;
+}
+
+/*Cambiar estado de la imagen  rgb(46, 95, 75)*/
+.Imagen:hover{
+    color: rgb(0, 252, 76);
+    background-color: #d8f3dc;
+}
+
+.Info{
+    padding: 2em;
+    text-decoration: navy;
+    margin: auto;
+}
+
+.Info h1{
+    padding: 1em;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    color: rgb(196, 124, 31);
+}
+
+.Info h2{
+    padding: 1em;
+    color: rgb(0, 0, 0);
+}
+
+.Info p{
+    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Pacifico', cursive;
+}
+
+aside{
+    background-color: #113114;
+}
+
+.Inventario{
+    height: 500px;
+    display: flex;
+    color: blanchedalmond;
+    padding: 2em;
+}
+
+.Inventario p{
+    font-family: 'Akaya Telivigala', cursive;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Akaya Kanadaka', cursive;
+    font-family: 'Pacifico', cursive;
+    text-align: justify;
+}
+
+.Inventario div{
+    margin: 60px;
+}
+
+.Inventario li{
+    list-style: none;
+    text-align: center;
+}
+
+.Producto1 img{
+    height: 200px;
+    width: 200px;
+}
+
+.Producto2 img{
+    height: 200px;
+    width: 200px;
+}
+
+.Producto3 img{
+    height: 200px;
+    width: 200px;
+}
+
+
+.Contactos{
+    background-color: rgb(255, 255, 255);
+    margin-right: 10%;
+    margin-left: 10%;
+    height: auto;
+    text-align: left;
+    padding: 5em;
+}
+
+.Contactos li{
+    list-style: none;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.Contactos img{
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+button{
+    font-family: 'Playfair Display', serif;
+    background: none;
+    color: #fff;
+    border: 1.5px solid #000000;
+    padding: 0.5em 1.5em;
+    font-size: 1.5em;
+    transition: color 1.5s,transform 2s, border-color 1s, box-shadow 1.25s  ; 
+}
+
+/*Cambiar estado del boton*/
+button:hover{
+    border-top: 1px;
+    border-right: 2px;
+    border-bottom: 2px;
+    border-left: 4px;
+    background: none;
+    color: #fff;
+    box-shadow: 0 0.5em 0.5em -0.2em  rgb(58, 102, 71);
+    transform: translateX(1em);
+    text-align: center;
+}
+
+footer h2{
+    background-color: #113114;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+@media (max-width: 1000px){
+    .Encabezado{
+        display: inline-block;
+    }
+    .Informacion{
+        display: inline-block
+    }
+    .Inventario{
+        display: inline-block
+    }
+    .Contactos{
+        display: inline-block
+    }
+}
